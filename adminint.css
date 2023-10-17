@@ -1,0 +1,29 @@
+ /* 
+ Author: Balaji Tarkasband;
+ theme: kevin Coating website;
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .wrapper{
+    border: 1px solid black;
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+ }
+ .text-center{
+    text-align: center;
+
+ }
+ /* css for menu */
+ .menu ul{
+    list-style-type: none;
+ }
+
+ /* css for Footer */
+ .footer{
+    background-color: #ff4757;
+    color: white;
+ }

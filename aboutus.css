@@ -1,0 +1,218 @@
+*{margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(255, 255, 255)
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: centre;
+        margin:20px auto;
+    }
+     
+    .heading h1{
+        font-size: 50px 
+       
+    }
+    
+    .heading .h1 ::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin:0 auto;
+        background-color: #4caf50;
+    
+    }
+    .heading p{
+        font-size: 18px;
+        color:#666;
+        margin-bottom: 35px;
+    }
+    
+    .container{
+        width:90%;
+        margin:0 auto;
+        padding: 10px 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .about-image{
+        flex:1;
+        margin-right: 40px;
+        overflow:hidden;
+    
+    }
+    .about-image img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    
+    }
+    .about-image:hover img{
+        transition: scale(1.2);
+    } 
+    .about-content{
+        flex:1;
+    
+    }
+    .about-content h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+        color:#333;
+    
+    }
+    .about-content p{
+        font-size: 18px;
+        line-height: 1.5;
+        color:#666;
+    
+    }
+    .about-content .read-more{
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: 0.3s ease;
+    
+    }
+    .about-content .read-more:hover{
+        background-color: white;
+    }
+    @media screen and (max-width: 768px) {
+        .heading{
+            padding: 0px 20px;
+        }
+        .heading h1{
+            font-size: 36px;
+        }
+        .heading p{
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+        .container{
+            padding: 20px;
+            flex-direction: coloum;
+    
+        }
+        .about{
+            padding: 20px;
+            flex-direction: column;
+    
+        }
+        .about-image{
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .about-content p{
+            padding:0px;
+            font-stretch: 16px;
+        }
+        .about-content .read-more{
+            font-size: 16px;
+    
+        }
+    }
+    .container1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+    }
+
+    .contact{
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    }
+
+    .left{
+        background: url("https://img.freepik.com/free-vector/hand-drawn-contact-information-background-template_23-2148190343.jpg?size=626&ext=jpg&ga=GA1.1.382374497.1680332280&semt=ais"); ;
+        background-size: cover;
+        height: 100%;
+
+    }
+    .right{
+        padding: 25px 40px;
+    }
+    h2{
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    
+    }
+    h2:after{
+        content: '';
+        position: absolute;
+        left: 50px;
+        bottom: 0;
+        transform: translate(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 1px;
+        background-color: orange;
+    }
+    .field{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        outline: none;
+        background-color: rgba(230, 230, 230,0.6);
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
+    .field:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    textarea{
+        min-height: 150px;
+    }
+    .btn{
+        width: 100%;
+        height: 0.5rem 1rem;
+        background-color: orange;
+        color:#fff;
+        font-size:1.1rem;
+        border: none;
+        outline: none;
+        cursor:pointer;
+        transition: .3s;
+    }
+
+    .btn:hover{
+        background-color: #27ae60;
+    }
+    .field:focus{
+        border: 2px solid rgba(30, 85, 250, 0.47);
+        background-color: #fff;
+        
+    }
+
+
+
